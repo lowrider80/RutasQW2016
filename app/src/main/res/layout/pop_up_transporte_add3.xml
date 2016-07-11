@@ -197,7 +197,6 @@
 	    					<Button
 						    android:id="@+id/buttonCancel"
 						    android:text="Cancelar"
-						    android:textColor="#6962a6" 
 						    android:textSize="18sp"
 						    android:layout_width="fill_parent"
 						    android:layout_height="fill_parent"
@@ -218,7 +217,6 @@
 	    					<Button
 						    android:id="@+id/buttonAcept"
 						    android:text="Aceptar"
-						    android:textColor="#6962a6" 
 						    android:textSize="18sp"
 						    android:layout_width="fill_parent"
 						    android:layout_height="fill_parent"

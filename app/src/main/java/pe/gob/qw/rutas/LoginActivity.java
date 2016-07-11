@@ -164,22 +164,22 @@ public class LoginActivity extends AppCompatActivity implements OnClickListener 
     private void cargandoDatos() {
         final List<String> msgLoad = new ArrayList<String>();
 
-        msgLoad.add("Cargando Postores");                       //0
+        //msgLoad.add("Cargando Postores");                       //0
         msgLoad.add("Cargando Proveedores");                    //1
         msgLoad.add("Cargando Supervisores");                   //2
         msgLoad.add("Cargando Especialistas");                  //3
         msgLoad.add("Cargando Lista de Vehiculos");             //4
         msgLoad.add("Cargando Lista de Liberación Rutas");      //5
         msgLoad.add("Cargando Rutas de Colegios");              //6
-        msgLoad.add("Cargando Banco de Preguntas");             //7
-        msgLoad.add("Cargando Causales");                       //8
+        //msgLoad.add("Cargando Banco de Preguntas");             //7
+        //msgLoad.add("Cargando Causales");                       //8
         msgLoad.add("Cargando Formato");                        //9
         msgLoad.add("Cargando Maestro de Fichas");              //10
-        msgLoad.add("Cargando Contratos");                      //11
-        msgLoad.add("Cargando Detalles de Liberación");         //12
-        msgLoad.add("Cargando Items");                          //13
-        msgLoad.add("Cargando Componentes");                    //14
-        msgLoad.add("Cargando Ficha Tecnica de Presentación");  //15
+        //msgLoad.add("Cargando Contratos");                      //11
+        //msgLoad.add("Cargando Detalles de Liberación");         //12
+        //msgLoad.add("Cargando Items");                          //13
+        //msgLoad.add("Cargando Componentes");                    //14
+        //msgLoad.add("Cargando Ficha Tecnica de Presentación");  //15
         msgLoad.add("Cargando Fichas");                         //16
 
         /*new Thread() {
@@ -225,64 +225,64 @@ public class LoginActivity extends AppCompatActivity implements OnClickListener 
                             data = 0;
                             Bundle bundle = new Bundle();
                             switch (i) {
-                                case 0:
+                                /*case 0:
                                     bundle.putInt("data", setServicio.updateTABLETPOSTORES(LoginActivity.this, codUT));
                                     bypass = true;
-                                    break;
-                                case 1:
+                                    break;*/
+                                case 0:
                                     bundle.putInt("data", setServicio.updateTABLETPROVEEDORES(LoginActivity.this, codUT));
                                     break;
-                                case 2:
+                                case 1:
                                     bundle.putInt("data", setServicio.updateTABLETSUPERVISORES(LoginActivity.this, codUT));
                                     break;
-                                case 3:
+                                case 2:
                                     bundle.putInt("data", setServicio.updateTABLETESPECIALISTAS(LoginActivity.this, codUT));
                                     break;
-                                case 4:
+                                case 3:
                                     bundle.putInt("data", setServicio.updateTABLETVEHICULOS(LoginActivity.this, codUT));
                                     //EDIT
                                     bypass = true;
                                     break;
 
-                                case 5:
+                                case 4:
                                     bundle.putInt("data", setServicio.updateTABLETLIBERACIONRUTAS(LoginActivity.this, codUT));
                                     bypass = true;
                                     break;
-                                case 6:
+                                case 5:
                                     bundle.putInt("data", setServicio.updateTABLETRUTASCOLEGIOS(LoginActivity.this, codUT));
                                     bypass = true;
                                     break;
 
-                                case 7:
+                                /*case 7:
                                     bundle.putInt("data", setServicio.updateSMBCOPREGUNTAS(LoginActivity.this));
-                                    break;
-                                case 8:
+                                    break;*/
+                                /*case 8:
                                     bundle.putInt("data", setServicio.updateSMCAUSALES(LoginActivity.this));
-                                    break;
-                                case 9:
+                                    break;*/
+                                case 6:
                                     bundle.putInt("data", setServicio.updateSMFORMATO(LoginActivity.this));
                                     break;
-                                case 10:
+                                case 7:
                                     bundle.putInt("data", setServicio.updateSMMAEFICHAS(LoginActivity.this));
                                     break;
-                                case 11:
+                                /*case 11:
                                     bundle.putInt("data", setServicio.updateCONTRATO(LoginActivity.this, codUT));
-                                    break;
-                                case 12:
+                                    break;*/
+                                /*case 12:
                                     bundle.putInt("data", setServicio.updateDETALLELIBERACION(LoginActivity.this, codUT));
                                     bypass = true;
-                                    break;
-                                case 13:
+                                    break;*/
+                                /*case 7:
                                     bundle.putInt("data", setServicio.updatePROVEEDORESITEMS(LoginActivity.this, codUT));
-                                    break;
-                                case 14:
+                                    break;*/
+                                /*case 14:
                                     bundle.putInt("data", setServicio.updateCOMPONENTERACION(LoginActivity.this));
                                     bypass = true;
-                                    break;
-                                case 15:
+                                    break;*/
+                                /*case 15:
                                     bundle.putInt("data", setServicio.updateFICHATECNICAPRESENTACION(LoginActivity.this));
-                                    break;
-                                case 16:
+                                    break;*/
+                                case 8:
                                     bundle.putInt("data", DBQUESTIONARY_DAO.AgregarFichas(LoginActivity.this));
                                     ready = true;
                                     break;
