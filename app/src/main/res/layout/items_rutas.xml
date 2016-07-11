@@ -1,0 +1,336 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <!--android:weightSum="1"-->
+
+
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            >
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="ITEM"
+
+        android:layout_weight="0.07"
+        android:background="#221919"
+        android:textColor="#f7eeee"
+        android:textSize="20sp" />
+
+
+
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:gravity="center"
+            android:layout_width="134dp"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:layout_gravity="center"
+            android:typeface="monospace"
+            android:textColor="#FFFFFF"
+            android:textSize="20sp"
+            android:background="@drawable/cabecera"
+            android:text="SELECCIONA ITEM" />
+
+
+
+        <Spinner
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/spinnerItems"
+            android:layout_gravity="center_horizontal" />
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:gravity="center"
+            android:layout_width="134dp"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:layout_gravity="center"
+            android:typeface="monospace"
+            android:textColor="#FFFFFF"
+            android:textSize="18sp"
+            android:background="@drawable/cabecera"
+            android:text="SELECCIONA LIBERACION" />
+
+        <Spinner
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/spinnerliberacion"
+            android:layout_gravity="center_horizontal" />
+
+
+    </LinearLayout>
+
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="PLAZO DE ENTREGA"
+
+        android:layout_weight="0.07"
+        android:background="#221919"
+        android:textColor="#f7eeee"
+        android:textSize="20sp" />
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_weight="0.05"
+        android:weightSum="1">
+
+        <LinearLayout
+            android:layout_width="125dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="5dp"
+            android:background="@drawable/cabecera"
+            android:orientation="vertical">
+
+
+            <TextView
+                android:id="@+id/lblfi1"
+                android:gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:textStyle="bold"
+                android:layout_gravity="center"
+                android:typeface="monospace"
+                android:textColor="#FFFFFF"
+                android:textSize="14sp"
+                android:text="F.PLAZO INICIO" />
+
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/fondo"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:orientation="vertical">
+
+
+            <TextView
+                android:id="@+id/lblfi2"
+                android:gravity="center"
+                android:layout_width="228dp"
+                android:layout_height="match_parent"
+                android:textStyle="bold"
+                android:layout_gravity="center"
+                android:typeface="monospace"
+                android:textColor="@color/colorAccent"
+                android:textSize="14sp"/>
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_weight="0.05"
+        android:weightSum="1">
+
+        <LinearLayout
+            android:layout_width="125dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="5dp"
+            android:background="@drawable/cabecera"
+            android:orientation="vertical">
+
+
+            <TextView
+                android:id="@+id/lblff1"
+                android:gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:textStyle="bold"
+                android:layout_gravity="center"
+                android:typeface="monospace"
+                android:textColor="#FFFFFF"
+                android:textSize="14sp"
+                android:text="F.PLAZO FINAL" />
+
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/fondo"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:orientation="vertical">
+
+
+            <TextView
+                android:id="@+id/lblff2"
+                android:gravity="center"
+                android:layout_width="228dp"
+                android:layout_height="match_parent"
+                android:textStyle="bold"
+                android:layout_gravity="center"
+                android:typeface="monospace"
+                android:textColor="@color/colorAccent"
+                android:textSize="14sp"/>
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_weight="0.05"
+        android:weightSum="1">
+
+        <LinearLayout
+            android:layout_width="125dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="5dp"
+            android:background="@drawable/cabecera"
+            android:orientation="vertical">
+
+
+            <TextView
+                android:gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:textStyle="bold"
+                android:layout_gravity="center"
+                android:typeface="monospace"
+                android:textColor="#FFFFFF"
+                android:textSize="14sp"
+                android:text="N°  IES" />
+
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/fondo"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:orientation="vertical"
+
+            >
+            <EditText
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="fill_parent"
+                android:inputType="number"
+                android:id="@+id/numeroiee"
+                android:numeric="integer"
+                android:maxLength="3" />
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="20dp"
+        android:orientation="horizontal" >
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:layout_marginRight="10dp"
+            android:orientation="horizontal" >
+            <Button
+                android:id="@+id/buttonCancel"
+                android:text="Cancelar"
+                android:textSize="18sp"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                style="@style/ButtonStyle.RaisedFull"
+                android:shadowColor="#000000"
+                android:shadowDx="-1"
+                android:shadowDy="-1"
+                android:shadowRadius="1"/>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:layout_marginLeft="10dp"
+            android:orientation="horizontal" >
+            <Button
+                android:id="@+id/buttonAcept"
+                android:text="Aceptar"
+                android:textSize="18sp"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                style="@style/ButtonStyle.RaisedFull"
+                android:shadowColor="#000000"
+                android:shadowDx="-1"
+                android:shadowDy="-1"
+                android:shadowRadius="1"/>
+        </LinearLayout>
+    </LinearLayout>
+
+
+</LinearLayout>
+
+
+
+
+
+
+        </ScrollView>
+
+
+
+
+
+
+
+
+
+
+</LinearLayout  >
+
+
+
+
+
+
+

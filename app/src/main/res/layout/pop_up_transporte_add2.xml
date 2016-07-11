@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout  xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content">
+    <RelativeLayout
+        android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:isScrollContainer="true">
+
+		<ScrollView
+             android:id="@+id/scrollView1"
+             android:layout_width="fill_parent"
+             android:layout_height="wrap_content"
+             android:fillViewport="true" 
+             android:layout_weight="1">
+
+
+    <LinearLayout  
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/linearpadre">
+		<LinearLayout
+			android:orientation="vertical"
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content"
+			android:id="@+id/linear1">
+		</LinearLayout>
+
+		<LinearLayout
+			android:orientation="vertical"
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content"
+			android:id="@+id/linear2">
+		</LinearLayout>
+
+
+
+
+
+	</LinearLayout>
+
+
+
+
+
+   </ScrollView>
+
+	</RelativeLayout>
+
+    
+<LinearLayout
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:layout_marginTop="20dp"
+    android:layout_marginLeft="20dp"
+    android:layout_marginRight="20dp"
+    android:layout_marginBottom="20dp"
+    android:orientation="horizontal" >   
+	    <LinearLayout
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+	    android:layout_weight="1"
+	    android:gravity="center"
+	    android:layout_marginRight="10dp"
+	    android:orientation="horizontal" >   
+	    					<Button
+						    android:id="@+id/buttonCancel"
+						    android:text="Cancelar"
+								android:textSize="18sp"
+						    android:layout_width="fill_parent"
+						    android:layout_height="fill_parent"
+								style="@style/ButtonStyle.RaisedFull"
+						    android:shadowColor="#000000"
+						    android:shadowDx="-1"
+						    android:shadowDy="-1"
+						    android:shadowRadius="1"/>
+	    
+	    </LinearLayout>
+	    <LinearLayout
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+	    android:layout_weight="1"
+	    android:gravity="center"
+	    android:layout_marginLeft="10dp"
+	    android:orientation="horizontal" >   
+	    					<Button
+						    android:id="@+id/buttonAcept"
+						    android:text="Aceptar"
+								android:textSize="18sp"
+						    android:layout_width="fill_parent"
+						    android:layout_height="fill_parent"
+								style="@style/ButtonStyle.RaisedFull"
+						    android:shadowColor="#000000"
+						    android:shadowDx="-1"
+						    android:shadowDy="-1"
+						    android:shadowRadius="1"/>
+	    </LinearLayout>
+    </LinearLayout>
+
+
+</LinearLayout>
+

@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+      <!--  solo para nombre item    -->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_weight="2"
+            android:layout_gravity="center_vertical"
+            android:background="@color/colorAccent"
+            android:layout_marginLeft="1dp">
+
+
+            <TextView
+                android:id="@+id/nombreitem"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="NOMBRE ITEM"
+                android:gravity="center"
+                android:background="@android:color/white"
+                android:layout_margin="2dp"
+                android:textStyle="bold"
+                android:textSize="12sp" />
+
+
+        </LinearLayout>
+        <!--  solo para plazos     -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_weight="1"
+            android:layout_gravity="center_vertical"
+            android:background="@android:color/holo_red_dark"
+            android:layout_marginRight="2dp"
+            android:layout_marginLeft="2dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:gravity="center"
+                android:background="@android:color/white"
+                android:layout_margin="2dp">
+                <TextView
+                    android:id="@+id/plazoinicial"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="PLAZO INICIAL"
+                    android:layout_weight="1.25"
+                    android:textStyle="bold"
+                    android:textSize="15sp"
+                    android:layout_gravity="center_vertical"
+                    android:gravity="center" />
+                <TextView
+
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="AL"
+                    android:layout_weight="2"
+                    android:textStyle="bold"
+                    android:textSize="15sp"
+                    android:layout_gravity="center_vertical"
+                    android:gravity="center" />
+
+                <TextView
+                    android:id="@+id/plazofinal"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="PLAZO FINAL"
+                    android:layout_weight="1.25"
+                    android:textStyle="bold"
+                    android:textSize="15sp"
+                    android:layout_gravity="center_vertical"
+                    android:gravity="center" />
+
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+        <!--  solo para numero de iiee     -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_weight="2"
+            android:layout_gravity="center_vertical"
+            android:background="@color/colorAccent"
+            android:layout_marginRight="1dp">
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/NomIEE"
+                android:gravity="center"
+                android:text="N:IEE"
+
+                android:background="@android:color/white"
+                android:layout_margin="2dp"
+                android:textStyle="bold"
+                android:textSize="15sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_weight="2"
+            android:layout_gravity="center_vertical"
+            android:background="@color/colorAccent"
+            android:layout_marginRight="1dp">
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/Numentrega"
+                android:gravity="center"
+                android:text="N°ENTREGA"
+
+                android:background="@android:color/white"
+                android:layout_margin="2dp"
+                android:textStyle="bold"
+                android:textSize="15sp" />
+        </LinearLayout>
+
+
+
+
+    </LinearLayout>
+
+
+
+</LinearLayout>
+
+
+
+
+</LinearLayout>

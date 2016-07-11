@@ -1,0 +1,36 @@
+<resources>
+    <string name="app_name">Rutas QW 2016</string>
+
+    <string name="app_name_drawer">Ficha de Rutas 2016</string>
+
+    <!-- SPLASH -->
+    <string name="welcome">Qaliwarma</string>
+
+    <!-- LOGIN -->
+    <string name="username">Usuario</string>
+    <string name="password">Contraseña</string>
+    <string name="login">INICIAR SESIÓN</string>
+    <string name="splash_copyright">QaliWarma ® 2016 Todos los derechos reservados</string>
+
+    <string name="error_field_required">Campo requerido</string>
+    <string name="error_invalid_password">Usuario y contraseña no coinciden</string>
+    <string name="error_incorrect_password">Contraseña incorrecta</string>
+
+    <string name="fontello_user">&#xee2e;</string>
+    <string name="fontello_password">&#xed5b;</string>
+
+    <!-- MAIN -->
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="action_logout">Cerrar Sesión</string>
+
+    <!-- CONFIG -->
+    <string name="fontello_senddata">&#xeb2f;</string>
+    <string name="fontello_backupdata">&#xeb2b;</string>
+    <string name="fontello_syncraciones">&#xeb92;</string>
+
+    <!-- TOAST -->
+    <string name="fontello_toast3">&#xec4a;</string>
+
+
+</resources>

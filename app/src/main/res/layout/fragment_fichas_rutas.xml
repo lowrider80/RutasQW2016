@@ -1,0 +1,1525 @@
+<?xml version="1.0" encoding="utf-8"?>
+ 
+    
+<!--  <LinearLayout 
+   xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent" 
+   	android:orientation="vertical"
+    android:background="#ffffff"
+    android:descendantFocusability="beforeDescendants"
+    android:focusableInTouchMode="true" > -->
+    
+     
+     
+     <ScrollView
+             xmlns:android="http://schemas.android.com/apk/res/android"
+             android:id="@+id/scrollView1"
+             android:layout_width="match_parent"
+             android:layout_height="match_parent"
+             android:fillViewport="true" 
+             android:layout_weight="1">
+             
+          
+             <LinearLayout
+                 android:layout_width="fill_parent"
+                 android:layout_height="wrap_content"
+                 android:background="#ffffff"
+                 android:descendantFocusability="beforeDescendants"
+                 android:focusableInTouchMode="true"
+                 android:orientation="vertical" >
+
+				 <LinearLayout
+					 android:orientation="horizontal"
+					 android:layout_width="match_parent"
+					 android:layout_height="wrap_content"
+					 android:layout_marginLeft="5dp"
+					 android:layout_marginRight="5dp"
+					 android:gravity="center"
+					 android:background="#000000"
+					 android:layout_marginTop="5dp"
+					 android:visibility="gone">
+
+					 <TextView
+						 android:layout_width="match_parent"
+						 android:layout_height="wrap_content"
+						 android:textAppearance="?android:attr/textAppearanceLarge"
+						 android:text="IDENTIFICACIÓN DEL ESTABLECIMIENTO"
+						 android:id="@+id/textView57"
+						 android:gravity="center"
+						 android:textColor="#ffffff"
+						 android:textSize="20sp"
+						 android:textIsSelectable="false"
+						 android:textStyle="bold"
+						 android:padding="2dp" />
+				 </LinearLayout>
+
+				 <LinearLayout
+					 android:orientation="horizontal"
+					 android:layout_width="match_parent"
+					 android:layout_height="wrap_content"
+					 android:layout_marginLeft="5dp"
+					 android:layout_marginRight="5dp"
+					 android:gravity="center"
+					 android:layout_marginTop="3dp"
+					 android:background="@color/colorAccent"
+					 android:visibility="gone"
+					 android:baselineAligned="false">
+
+					 <LinearLayout
+						 android:orientation="vertical"
+						 android:layout_width="match_parent"
+						 android:layout_height="match_parent"
+						 android:layout_weight="2"
+						 android:gravity="center" >
+
+						 <TextView
+							 android:layout_width="match_parent"
+							 android:layout_height="wrap_content"
+							 android:textAppearance="?android:attr/textAppearanceLarge"
+							 android:text="CÓDIGO:"
+							 android:id="@+id/textView67"
+							 android:textColor="#ffffff"
+							 android:textSize="15sp"
+							 android:textStyle="bold"
+							 android:gravity="right"
+							 android:padding="5dp" />
+					 </LinearLayout>
+
+					 <LinearLayout
+						 android:orientation="vertical"
+						 android:layout_width="match_parent"
+						 android:layout_height="match_parent"
+						 android:layout_weight="1"
+						 android:baselineAligned="false"
+						 android:clickable="false"
+						 android:gravity="center"
+						 android:layout_marginRight="1dp"
+						 android:layout_marginTop="1dp"
+						 android:layout_marginBottom="1dp" >
+
+						 <TextView
+							 android:layout_width="match_parent"
+							 android:layout_height="match_parent"
+							 android:textAppearance="?android:attr/textAppearanceLarge"
+							 android:text="lbl_cCodEstablecimiento"
+							 android:id="@+id/textView68"
+							 android:gravity="center"
+							 android:textColor="@color/colorAccent"
+							 android:textSize="15sp"
+							 android:textStyle="bold"
+							 android:padding="5dp"
+							 android:background="#ffffff"
+							 android:autoText="false" />
+					 </LinearLayout>
+				 </LinearLayout>
+
+				 <LinearLayout
+					 android:orientation="horizontal"
+					 android:layout_width="match_parent"
+					 android:layout_height="wrap_content"
+					 android:layout_marginRight="5dp"
+					 android:gravity="center"
+					 android:background="@color/colorAccent"
+					 android:layout_marginTop="3dp"
+					 android:layout_marginLeft="5dp"
+					 android:visibility="gone"
+					 android:baselineAligned="false">
+
+					 <LinearLayout
+						 android:orientation="vertical"
+						 android:layout_width="match_parent"
+						 android:layout_height="match_parent"
+						 android:layout_weight="2"
+						 android:gravity="center" >
+
+						 <TextView
+							 android:layout_width="match_parent"
+							 android:layout_height="wrap_content"
+							 android:textAppearance="?android:attr/textAppearanceLarge"
+							 android:text="NOMBRE:"
+							 android:id="@+id/textView69"
+							 android:textColor="#ffffff"
+							 android:textSize="15sp"
+							 android:textStyle="bold"
+							 android:gravity="right"
+							 android:padding="5dp" />
+					 </LinearLayout>
+
+					 <LinearLayout
+						 android:orientation="vertical"
+						 android:layout_width="match_parent"
+						 android:layout_height="match_parent"
+						 android:layout_weight="1"
+						 android:baselineAligned="false"
+						 android:clickable="false"
+						 android:gravity="center"
+						 android:layout_marginTop="1dp"
+						 android:layout_marginRight="1dp"
+						 android:layout_marginBottom="1dp" >
+
+						 <TextView
+							 android:layout_width="match_parent"
+							 android:layout_height="match_parent"
+							 android:textAppearance="?android:attr/textAppearanceLarge"
+							 android:text="lbl_vObservacion"
+							 android:id="@+id/textView70"
+							 android:gravity="center"
+							 android:textColor="@color/colorAccent"
+							 android:textSize="15sp"
+							 android:textStyle="bold"
+							 android:padding="5dp"
+							 android:background="#ffffff" />
+					 </LinearLayout>
+				 </LinearLayout>
+
+
+
+
+	<!-- A PARTIR DE ACA EMPIEZA LA FICHA  -->
+				 <LinearLayout
+					 android:orientation="horizontal"
+					 android:layout_width="match_parent"
+					 android:layout_height="wrap_content"
+					 android:layout_marginLeft="5dp"
+					 android:layout_marginRight="5dp"
+					 android:gravity="center"
+					 android:background="#000000"
+					 android:layout_marginTop="5dp" >
+
+					 <TextView
+						 android:layout_width="match_parent"
+						 android:layout_height="wrap_content"
+						 android:textAppearance="?android:attr/textAppearanceLarge"
+						 android:text="DATOS DEL PROVEEDOR"
+						 android:id="@+id/textView71"
+						 android:gravity="center"
+						 android:textColor="#ffffff"
+						 android:textSize="20sp"
+						 android:textIsSelectable="false"
+						 android:textStyle="bold"
+						 android:padding="2dp" />
+				 </LinearLayout>
+
+				 <LinearLayout
+					 android:orientation="horizontal"
+					 android:layout_width="match_parent"
+					 android:layout_height="wrap_content"
+					 android:layout_marginLeft="5dp"
+					 android:layout_marginRight="5dp"
+					 android:gravity="center"
+					 android:layout_marginTop="3dp"
+					 android:background="@color/colorAccent"
+					 android:baselineAligned="false">
+
+					 <LinearLayout
+						 android:orientation="vertical"
+						 android:layout_width="match_parent"
+						 android:layout_height="match_parent"
+						 android:layout_weight="2"
+						 android:gravity="center" >
+
+						 <TextView
+							 android:layout_width="match_parent"
+							 android:layout_height="wrap_content"
+							 android:textAppearance="?android:attr/textAppearanceLarge"
+							 android:text="RUC:"
+							 android:id="@+id/textView72"
+							 android:textColor="#ffffff"
+							 android:textSize="15sp"
+							 android:textStyle="bold"
+							 android:gravity="right"
+							 android:padding="5dp" />
+					 </LinearLayout>
+
+					 <LinearLayout
+						 android:orientation="vertical"
+						 android:layout_width="match_parent"
+						 android:layout_height="match_parent"
+						 android:layout_weight="1"
+						 android:baselineAligned="false"
+						 android:clickable="false"
+						 android:gravity="center"
+						 android:layout_marginRight="1dp"
+						 android:layout_marginTop="1dp"
+						 android:layout_marginBottom="1dp" >
+
+						 <TextView
+							 android:layout_width="match_parent"
+							 android:layout_height="match_parent"
+							 android:textAppearance="?android:attr/textAppearanceLarge"
+							 android:text="lbl_cRUC"
+							 android:id="@+id/lbl_cRUC"
+							 android:gravity="center"
+							 android:textColor="@android:color/black"
+							 android:textSize="15sp"
+							 android:textStyle="bold"
+							 android:padding="5dp"
+							 android:background="#ffffff"
+							 android:autoText="false" />
+					 </LinearLayout>
+				 </LinearLayout>
+
+				 <LinearLayout
+					 android:orientation="horizontal"
+					 android:layout_width="match_parent"
+					 android:layout_height="wrap_content"
+					 android:layout_marginRight="5dp"
+					 android:gravity="center"
+					 android:background="@color/colorAccent"
+					 android:layout_marginTop="3dp"
+					 android:layout_marginLeft="5dp"
+					 android:baselineAligned="false">
+
+					 <LinearLayout
+						 android:orientation="vertical"
+						 android:layout_width="match_parent"
+						 android:layout_height="match_parent"
+						 android:layout_weight="2"
+						 android:gravity="center" >
+
+						 <TextView
+							 android:layout_width="match_parent"
+							 android:layout_height="wrap_content"
+							 android:textAppearance="?android:attr/textAppearanceLarge"
+							 android:text="NOMBRE:"
+							 android:id="@+id/textView74"
+							 android:textColor="#ffffff"
+							 android:textSize="15sp"
+							 android:textStyle="bold"
+							 android:gravity="right"
+							 android:padding="5dp" />
+					 </LinearLayout>
+
+					 <LinearLayout
+						 android:orientation="vertical"
+						 android:layout_width="match_parent"
+						 android:layout_height="match_parent"
+						 android:layout_weight="1"
+						 android:baselineAligned="false"
+						 android:clickable="false"
+						 android:gravity="center"
+						 android:layout_marginTop="1dp"
+						 android:layout_marginRight="1dp"
+						 android:layout_marginBottom="1dp" >
+
+						 <TextView
+							 android:layout_width="match_parent"
+							 android:layout_height="match_parent"
+							 android:textAppearance="?android:attr/textAppearanceLarge"
+							 android:text="lbl_vNombreProveedor"
+							 android:id="@+id/lbl_vNombreProveedor"
+							 android:gravity="center"
+							 android:textColor="@android:color/black"
+							 android:textSize="15sp"
+							 android:textStyle="bold"
+							 android:padding="5dp"
+							 android:background="#ffffff" />
+					 </LinearLayout>
+				 </LinearLayout>
+
+				 <LinearLayout
+					 android:orientation="horizontal"
+					 android:layout_width="match_parent"
+					 android:layout_height="wrap_content"
+					 android:layout_marginRight="5dp"
+					 android:gravity="center"
+					 android:background="@color/colorAccent"
+					 android:layout_marginTop="3dp"
+					 android:layout_marginLeft="5dp"
+					 android:baselineAligned="false">
+
+					 <LinearLayout
+						 android:orientation="vertical"
+						 android:layout_width="match_parent"
+						 android:layout_height="match_parent"
+						 android:layout_weight="2"
+						 android:gravity="center" >
+
+						 <TextView
+							 android:layout_width="match_parent"
+							 android:layout_height="wrap_content"
+							 android:textAppearance="?android:attr/textAppearanceLarge"
+							 android:text="FECHA:"
+							 android:id="@+id/textView76"
+							 android:textColor="#ffffff"
+							 android:textSize="15sp"
+							 android:textStyle="bold"
+							 android:gravity="right"
+							 android:padding="5dp" />
+					 </LinearLayout>
+
+
+					 <LinearLayout
+						 android:orientation="vertical"
+						 android:layout_width="match_parent"
+						 android:layout_height="match_parent"
+						 android:layout_weight="1"
+						 android:baselineAligned="false"
+						 android:clickable="false"
+						 android:gravity="center"
+						 android:layout_marginTop="1dp"
+						 android:layout_marginRight="1dp"
+						 android:layout_marginBottom="1dp" >
+
+						 <LinearLayout
+							 android:orientation="vertical"
+							 android:layout_width="match_parent"
+							 android:layout_height="match_parent"
+							 android:background="#ffffff">
+
+							 <EditText
+								 android:layout_width="match_parent"
+								 android:layout_height="wrap_content"
+								 android:ems="10"
+								 android:id="@+id/txtfecharuta"
+
+								 android:textColor="@android:color/black"
+								 android:gravity="center"
+								 android:textStyle="bold"
+
+								 android:textSize="15sp"
+								 android:hint="DD/MM/YY" />
+						 </LinearLayout>
+					 </LinearLayout>
+
+				 </LinearLayout>
+
+
+				 <LinearLayout
+					 android:orientation="horizontal"
+					 android:layout_width="match_parent"
+					 android:layout_height="wrap_content"
+					 android:layout_marginRight="5dp"
+					 android:gravity="center"
+					 android:background="@color/colorAccent"
+					 android:layout_marginTop="3dp"
+					 android:layout_marginLeft="5dp"
+					 android:baselineAligned="false">
+
+					 <LinearLayout
+						 android:orientation="vertical"
+						 android:layout_width="match_parent"
+						 android:layout_height="match_parent"
+						 android:layout_weight="2"
+						 android:gravity="center" >
+
+						 <TextView
+							 android:layout_width="match_parent"
+							 android:layout_height="wrap_content"
+							 android:textAppearance="?android:attr/textAppearanceLarge"
+							 android:text="HORA:"
+							 android:id="@+id/textView100"
+							 android:textColor="#ffffff"
+							 android:textSize="15sp"
+							 android:textStyle="bold"
+							 android:gravity="right"
+							 android:padding="5dp" />
+					 </LinearLayout>
+
+
+					 <LinearLayout
+						 android:orientation="vertical"
+						 android:layout_width="match_parent"
+						 android:layout_height="match_parent"
+						 android:layout_weight="1"
+						 android:baselineAligned="false"
+						 android:clickable="false"
+						 android:gravity="center"
+						 android:layout_marginTop="1dp"
+						 android:layout_marginRight="1dp"
+						 android:layout_marginBottom="1dp" >
+
+						 <LinearLayout
+							 android:orientation="vertical"
+							 android:layout_width="match_parent"
+							 android:layout_height="match_parent"
+							 android:background="#ffffff">
+
+							 <EditText
+								 android:layout_width="match_parent"
+								 android:layout_height="wrap_content"
+								 android:ems="10"
+								 android:id="@+id/txthoraruta"
+								 android:textColor="@android:color/black"
+								 android:gravity="center"
+								 android:textStyle="bold"
+
+								 android:textSize="15sp"
+								 android:hint="HH:MM" />
+						 </LinearLayout>
+					 </LinearLayout>
+
+				 </LinearLayout>
+
+
+
+				 <LinearLayout
+					 android:orientation="horizontal"
+					 android:layout_width="match_parent"
+					 android:layout_height="wrap_content"
+					 android:layout_marginLeft="5dp"
+					 android:layout_marginRight="5dp"
+					 android:gravity="center"
+					 android:background="#000000"
+					 android:layout_marginTop="5dp" >
+
+					 <TextView
+						 android:layout_width="match_parent"
+						 android:layout_height="wrap_content"
+						 android:textAppearance="?android:attr/textAppearanceLarge"
+						 android:text="IDENTIFICACIÓN DEL ESTABLECIMIENTO"
+						 android:id="@+id/textView102"
+						 android:gravity="center"
+						 android:textColor="#ffffff"
+						 android:textSize="20sp"
+						 android:textIsSelectable="false"
+						 android:textStyle="bold"
+						 android:padding="2dp" />
+				 </LinearLayout>
+
+				 <LinearLayout
+					 android:orientation="horizontal"
+					 android:layout_width="match_parent"
+					 android:layout_height="wrap_content"
+					 android:layout_marginLeft="5dp"
+					 android:layout_marginRight="5dp"
+					 android:gravity="center"
+					 android:layout_marginTop="3dp"
+					 android:background="@color/colorAccent"
+					 android:baselineAligned="false">
+
+					 <LinearLayout
+						 android:orientation="vertical"
+						 android:layout_width="match_parent"
+						 android:layout_height="match_parent"
+						 android:layout_weight="2"
+						 android:gravity="center" >
+
+						 <TextView
+							 android:layout_width="match_parent"
+							 android:layout_height="wrap_content"
+							 android:textAppearance="?android:attr/textAppearanceLarge"
+							 android:text="CÓDIGO:"
+							 android:id="@+id/textView103"
+							 android:textColor="#ffffff"
+							 android:textSize="15sp"
+							 android:textStyle="bold"
+							 android:gravity="right"
+							 android:padding="5dp" />
+					 </LinearLayout>
+
+					 <LinearLayout
+						 android:orientation="vertical"
+						 android:layout_width="match_parent"
+						 android:layout_height="match_parent"
+						 android:layout_weight="1"
+						 android:baselineAligned="false"
+						 android:clickable="false"
+						 android:gravity="center"
+						 android:layout_marginRight="1dp"
+						 android:layout_marginTop="1dp"
+						 android:layout_marginBottom="1dp" >
+
+						 <TextView
+							 android:layout_width="match_parent"
+							 android:layout_height="match_parent"
+							 android:textAppearance="?android:attr/textAppearanceLarge"
+							 android:text="lbl_cCodEstablecimiento"
+							 android:id="@+id/lbl_cCodEstablecimiento"
+							 android:gravity="center"
+							 android:textColor="@android:color/black"
+							 android:textSize="15sp"
+							 android:textStyle="bold"
+							 android:padding="5dp"
+							 android:background="#ffffff"
+							 android:autoText="false" />
+					 </LinearLayout>
+				 </LinearLayout>
+
+				 <LinearLayout
+					 android:orientation="horizontal"
+					 android:layout_width="match_parent"
+					 android:layout_height="wrap_content"
+					 android:layout_marginLeft="5dp"
+					 android:layout_marginRight="5dp"
+					 android:gravity="center"
+					 android:layout_marginTop="3dp"
+					 android:background="@color/colorAccent"
+					 android:baselineAligned="false">
+
+					 <LinearLayout
+						 android:orientation="vertical"
+						 android:layout_width="match_parent"
+						 android:layout_height="match_parent"
+						 android:layout_weight="2"
+						 android:gravity="center" >
+
+						 <TextView
+							 android:layout_width="match_parent"
+							 android:layout_height="wrap_content"
+							 android:textAppearance="?android:attr/textAppearanceLarge"
+							 android:text="ESTABLECIMIENTO:"
+							 android:id="@+id/textView96"
+							 android:textColor="#ffffff"
+							 android:textSize="15sp"
+							 android:textStyle="bold"
+							 android:gravity="right"
+							 android:padding="5dp" />
+					 </LinearLayout>
+
+					 <LinearLayout
+						 android:orientation="vertical"
+						 android:layout_width="match_parent"
+						 android:layout_height="match_parent"
+						 android:layout_weight="1"
+						 android:baselineAligned="false"
+						 android:clickable="false"
+						 android:gravity="center"
+						 android:layout_marginRight="1dp"
+						 android:layout_marginTop="1dp"
+						 android:layout_marginBottom="1dp" >
+
+						 <TextView
+							 android:layout_width="match_parent"
+							 android:layout_height="match_parent"
+							 android:textAppearance="?android:attr/textAppearanceLarge"
+							 android:text="lbl_vObservacion"
+							 android:id="@+id/lbl_vObservacion"
+							 android:gravity="center"
+							 android:textColor="@android:color/black"
+							 android:textSize="15sp"
+							 android:textStyle="bold"
+							 android:padding="5dp"
+							 android:background="#ffffff"
+							 android:autoText="false" />
+					 </LinearLayout>
+				 </LinearLayout>
+
+				 <LinearLayout
+					 android:orientation="horizontal"
+					 android:layout_width="match_parent"
+					 android:layout_height="wrap_content"
+					 android:layout_marginLeft="5dp"
+					 android:layout_marginRight="5dp"
+					 android:gravity="center"
+					 android:layout_marginTop="3dp"
+					 android:background="@color/colorAccent"
+					 android:baselineAligned="false">
+
+					 <LinearLayout
+						 android:orientation="vertical"
+						 android:layout_width="match_parent"
+						 android:layout_height="match_parent"
+						 android:layout_weight="2"
+						 android:gravity="center" >
+
+						 <TextView
+							 android:layout_width="match_parent"
+							 android:layout_height="wrap_content"
+							 android:textAppearance="?android:attr/textAppearanceLarge"
+							 android:text="DIRECCIÓN:"
+							 android:id="@+id/textView98"
+							 android:textColor="#ffffff"
+							 android:textSize="15sp"
+							 android:textStyle="bold"
+							 android:gravity="right"
+							 android:padding="5dp" />
+					 </LinearLayout>
+
+
+
+
+
+
+					 <LinearLayout
+						 android:orientation="vertical"
+						 android:layout_width="match_parent"
+						 android:layout_height="match_parent"
+						 android:layout_weight="1"
+						 android:baselineAligned="false"
+						 android:clickable="false"
+						 android:gravity="center"
+						 android:layout_marginRight="1dp"
+						 android:layout_marginTop="1dp"
+						 android:layout_marginBottom="1dp" >
+
+						 <TextView
+							 android:layout_width="match_parent"
+							 android:layout_height="match_parent"
+							 android:textAppearance="?android:attr/textAppearanceLarge"
+							 android:text="lbl_vDireccionEstablecimiento"
+							 android:id="@+id/lbl_vDireccionEstablecimiento"
+							 android:gravity="center"
+							 android:textColor="@android:color/black"
+							 android:textSize="15sp"
+							 android:textStyle="bold"
+							 android:padding="5dp"
+							 android:background="#ffffff"
+							 android:autoText="false" />
+					 </LinearLayout>
+				 </LinearLayout>
+
+
+
+				 <LinearLayout
+					 android:orientation="horizontal"
+					 android:layout_width="match_parent"
+					 android:layout_height="wrap_content"
+					 android:layout_marginLeft="5dp"
+					 android:layout_marginRight="5dp"
+					 android:gravity="center"
+					 android:background="#000000"
+					 android:layout_marginTop="5dp" >
+
+					 <TextView
+						 android:layout_width="match_parent"
+						 android:layout_height="wrap_content"
+						 android:textAppearance="?android:attr/textAppearanceLarge"
+						 android:text="DATOS DEL CONTROL DE CALIDAD"
+						 android:id="@+id/textView134"
+						 android:gravity="center"
+						 android:textColor="#ffffff"
+						 android:textSize="20sp"
+						 android:textIsSelectable="false"
+						 android:textStyle="bold"
+						 android:padding="2dp" />
+				 </LinearLayout>
+				 <LinearLayout
+					 android:orientation="horizontal"
+					 android:layout_width="match_parent"
+					 android:layout_height="wrap_content"
+					 android:layout_marginLeft="5dp"
+					 android:layout_marginRight="5dp"
+					 android:gravity="center"
+					 android:background="@color/colorAccent"
+					 android:layout_marginTop="3dp"
+					 android:baselineAligned="false">
+
+					 <LinearLayout
+						 android:orientation="vertical"
+						 android:layout_width="match_parent"
+						 android:layout_height="match_parent"
+						 android:layout_weight="2"
+						 android:gravity="center" >
+
+						 <TextView
+							 android:layout_width="match_parent"
+							 android:layout_height="wrap_content"
+							 android:textAppearance="?android:attr/textAppearanceLarge"
+							 android:text="ESPECIALISTA:"
+							 android:id="@+id/textView46"
+							 android:textColor="#ffffff"
+							 android:textSize="15sp"
+							 android:textStyle="bold"
+							 android:gravity="right"
+							 android:padding="5dp" />
+					 </LinearLayout>
+
+					 <LinearLayout
+						 android:orientation="vertical"
+						 android:layout_width="match_parent"
+						 android:layout_height="match_parent"
+						 android:layout_weight="1"
+						 android:baselineAligned="false"
+						 android:clickable="false"
+						 android:gravity="center"
+						 android:layout_marginTop="1dp"
+						 android:layout_marginRight="1dp"
+						 android:layout_marginBottom="1dp"
+						 android:background="#ffffff">
+
+						 <Spinner
+							 android:layout_width="match_parent"
+							 android:layout_height="wrap_content"
+							 android:id="@+id/spespecialista"
+
+							 android:background="#ffffff" />
+
+						 <TextView
+							 android:layout_width="match_parent"
+							 android:layout_height="match_parent"
+							 android:textAppearance="?android:attr/textAppearanceLarge"
+							 android:text="lbl_vNControlCalidad"
+							 android:id="@+id/lbl_vNControlCalidad"
+							 android:gravity="center"
+							 android:textColor="@android:color/black"
+							 android:textSize="15sp"
+							 android:textStyle="bold"
+							 android:padding="5dp"
+							 android:background="#ffffff" />
+					 </LinearLayout>
+				 </LinearLayout>
+
+				 <LinearLayout
+					 android:orientation="horizontal"
+					 android:layout_width="match_parent"
+					 android:layout_height="wrap_content"
+					 android:layout_marginLeft="5dp"
+					 android:layout_marginRight="5dp"
+					 android:gravity="center"
+					 android:background="@color/colorAccent"
+					 android:layout_marginTop="3dp"
+					 android:baselineAligned="false">
+
+					 <LinearLayout
+						 android:orientation="vertical"
+						 android:layout_width="match_parent"
+						 android:layout_height="match_parent"
+						 android:layout_weight="2"
+						 android:gravity="center" >
+
+						 <TextView
+							 android:layout_width="match_parent"
+							 android:layout_height="wrap_content"
+							 android:textAppearance="?android:attr/textAppearanceLarge"
+							 android:text="# COLEGIATURA:"
+							 android:id="@+id/textView47"
+							 android:textColor="#ffffff"
+							 android:textSize="15sp"
+							 android:textStyle="bold"
+							 android:gravity="right"
+							 android:padding="5dp" />
+					 </LinearLayout>
+
+					 <LinearLayout
+						 android:orientation="vertical"
+						 android:layout_width="match_parent"
+						 android:layout_height="match_parent"
+						 android:layout_weight="1"
+						 android:baselineAligned="false"
+						 android:clickable="false"
+						 android:gravity="center"
+						 android:layout_marginTop="1dp"
+						 android:layout_marginRight="1dp"
+						 android:layout_marginBottom="1dp" >
+
+						 <TextView
+							 android:layout_width="match_parent"
+							 android:layout_height="match_parent"
+							 android:textAppearance="?android:attr/textAppearanceLarge"
+							 android:text="lbl_vColegiatura"
+							 android:id="@+id/lbl_vColegiatura"
+							 android:gravity="center"
+							 android:textColor="@android:color/black"
+							 android:textSize="15sp"
+							 android:textStyle="bold"
+							 android:padding="5dp"
+							 android:background="#ffffff" />
+					 </LinearLayout>
+				 </LinearLayout>
+				 <LinearLayout
+					 android:orientation="horizontal"
+					 android:layout_width="match_parent"
+					 android:layout_height="wrap_content"
+					 android:layout_marginLeft="5dp"
+					 android:layout_marginRight="5dp"
+					 android:gravity="center"
+					 android:background="@color/colorAccent"
+					 android:layout_marginTop="3dp"
+					 android:baselineAligned="false">
+
+					 <LinearLayout
+						 android:orientation="vertical"
+						 android:layout_width="match_parent"
+						 android:layout_height="match_parent"
+						 android:layout_weight="2"
+						 android:gravity="center" >
+
+						 <TextView
+							 android:layout_width="match_parent"
+							 android:layout_height="wrap_content"
+							 android:textAppearance="?android:attr/textAppearanceLarge"
+							 android:text="# PROFESION:"
+							 android:id="@+id/textView133"
+							 android:textColor="#ffffff"
+							 android:textSize="15sp"
+							 android:textStyle="bold"
+							 android:gravity="right"
+							 android:padding="5dp" />
+					 </LinearLayout>
+
+					 <LinearLayout
+						 android:orientation="vertical"
+						 android:layout_width="match_parent"
+						 android:layout_height="match_parent"
+						 android:layout_weight="1"
+						 android:baselineAligned="false"
+						 android:clickable="false"
+						 android:gravity="center"
+						 android:layout_marginTop="1dp"
+						 android:layout_marginRight="1dp"
+						 android:layout_marginBottom="1dp" >
+
+						 <TextView
+							 android:layout_width="match_parent"
+							 android:layout_height="match_parent"
+							 android:textAppearance="?android:attr/textAppearanceLarge"
+							 android:text="lbl_vColegiatura"
+							 android:id="@+id/lbl_vProfesion"
+							 android:gravity="center"
+							 android:textColor="@android:color/black"
+							 android:textSize="15sp"
+							 android:textStyle="bold"
+							 android:padding="5dp"
+							 android:background="#ffffff" />
+					 </LinearLayout>
+				 </LinearLayout>
+
+
+
+				 <LinearLayout
+					 android:orientation="horizontal"
+					 android:layout_width="match_parent"
+					 android:layout_height="wrap_content"
+					 android:layout_marginLeft="5dp"
+					 android:layout_marginRight="5dp"
+					 android:gravity="center"
+					 android:background="#000000"
+					 android:layout_marginTop="5dp" >
+
+					 <TextView
+						 android:layout_width="match_parent"
+						 android:layout_height="wrap_content"
+						 android:textAppearance="?android:attr/textAppearanceLarge"
+						 android:text="DATOS DEL VEHÍCULO DE SALIDA"
+						 android:id="@+id/textView73"
+						 android:gravity="center"
+						 android:textColor="#ffffff"
+						 android:textSize="20sp"
+						 android:textIsSelectable="false"
+						 android:textStyle="bold"
+						 android:padding="2dp" />
+				 </LinearLayout>
+
+				 <LinearLayout
+					 android:orientation="horizontal"
+					 android:layout_width="match_parent"
+					 android:layout_height="wrap_content"
+					 android:layout_marginRight="5dp"
+					 android:gravity="center"
+					 android:background="@color/colorAccent"
+					 android:layout_marginTop="3dp"
+					 android:layout_marginLeft="5dp"
+					 android:baselineAligned="false">
+
+					 <LinearLayout
+						 android:orientation="vertical"
+						 android:layout_width="match_parent"
+						 android:layout_height="match_parent"
+						 android:layout_weight="2"
+						 android:gravity="center" >
+
+						 <TextView
+							 android:layout_width="match_parent"
+							 android:layout_height="wrap_content"
+							 android:textAppearance="?android:attr/textAppearanceLarge"
+							 android:text="PLACA:"
+							 android:id="@+id/textView75"
+							 android:textColor="#ffffff"
+							 android:textSize="15sp"
+							 android:textStyle="bold"
+							 android:gravity="right"
+							 android:padding="5dp" />
+					 </LinearLayout>
+
+					 <LinearLayout
+						 android:orientation="vertical"
+						 android:layout_width="match_parent"
+						 android:layout_height="match_parent"
+						 android:layout_weight="1"
+						 android:baselineAligned="false"
+						 android:clickable="false"
+						 android:gravity="center"
+						 android:layout_marginTop="1dp"
+						 android:layout_marginRight="1dp"
+						 android:layout_marginBottom="1dp" >
+
+						 <Spinner
+                             android:id="@+id/ComboPlaca"
+                             android:layout_width="match_parent"
+                             android:layout_height="match_parent"
+                             android:layout_gravity="center"
+                             android:textSize="14sp"
+							 android:background="#ffffff"
+							 android:textAlignment="center" />
+
+					 </LinearLayout>
+				 </LinearLayout>
+
+				 <LinearLayout
+					 android:orientation="horizontal"
+					 android:layout_width="match_parent"
+					 android:layout_height="wrap_content"
+					 android:layout_marginLeft="5dp"
+					 android:layout_marginRight="5dp"
+					 android:gravity="center"
+					 android:layout_marginTop="3dp"
+					 android:background="@color/colorAccent"
+					 android:baselineAligned="false">
+
+					 <LinearLayout
+						 android:orientation="vertical"
+						 android:layout_width="match_parent"
+						 android:layout_height="match_parent"
+						 android:layout_weight="2"
+						 android:gravity="center" >
+
+						 <TextView
+							 android:layout_width="match_parent"
+							 android:layout_height="wrap_content"
+							 android:textAppearance="?android:attr/textAppearanceLarge"
+							 android:text="TIPO DE VEHÍCULO:"
+							 android:id="@+id/textView77"
+							 android:textColor="#ffffff"
+							 android:textSize="15sp"
+							 android:textStyle="bold"
+							 android:gravity="right"
+							 android:padding="5dp" />
+					 </LinearLayout>
+
+					 <LinearLayout
+						 android:orientation="vertical"
+						 android:layout_width="match_parent"
+						 android:layout_height="match_parent"
+						 android:layout_weight="1"
+						 android:baselineAligned="false"
+						 android:clickable="false"
+						 android:gravity="center"
+						 android:layout_marginRight="1dp"
+						 android:layout_marginTop="1dp"
+						 android:layout_marginBottom="1dp" >
+
+						 <TextView
+							 android:layout_width="match_parent"
+							 android:layout_height="match_parent"
+							 android:textAppearance="?android:attr/textAppearanceLarge"
+							 android:text="lbl_vNombre"
+							 android:id="@+id/lbl_vNombre"
+							 android:gravity="center"
+							 android:textColor="@android:color/black"
+							 android:textSize="15sp"
+							 android:textStyle="bold"
+							 android:padding="5dp"
+							 android:background="#ffffff"
+							 android:autoText="false" />
+
+					 </LinearLayout>
+				 </LinearLayout>
+
+				 <LinearLayout
+					 android:orientation="horizontal"
+					 android:layout_width="match_parent"
+					 android:layout_height="wrap_content"
+					 android:layout_marginRight="5dp"
+					 android:gravity="center"
+					 android:background="@color/colorAccent"
+					 android:layout_marginTop="3dp"
+					 android:layout_marginLeft="5dp"
+					 android:baselineAligned="false">
+
+					 <LinearLayout
+						 android:orientation="vertical"
+						 android:layout_width="match_parent"
+						 android:layout_height="match_parent"
+						 android:layout_weight="2"
+						 android:gravity="center" >
+
+						 <TextView
+							 android:layout_width="match_parent"
+							 android:layout_height="wrap_content"
+							 android:textAppearance="?android:attr/textAppearanceLarge"
+							 android:text="RUTA:"
+							 android:id="@+id/textView97"
+							 android:textColor="#ffffff"
+							 android:textSize="15sp"
+							 android:textStyle="bold"
+							 android:gravity="right"
+							 android:padding="5dp" />
+					 </LinearLayout>
+
+					 <LinearLayout
+						 android:orientation="vertical"
+						 android:layout_width="match_parent"
+						 android:layout_height="match_parent"
+						 android:layout_weight="1"
+						 android:baselineAligned="false"
+						 android:clickable="false"
+						 android:gravity="center"
+						 android:layout_marginTop="1dp"
+						 android:layout_marginRight="1dp"
+						 android:layout_marginBottom="1dp" >
+
+						 <Spinner
+							 android:id="@+id/ComboRutas"
+							 android:layout_width="match_parent"
+							 android:layout_height="match_parent"
+							 android:layout_gravity="center"
+							 android:textSize="14sp"
+							 android:background="#ffffff"
+							 android:textAlignment="center" />
+					 </LinearLayout>
+				 </LinearLayout>
+
+				 <LinearLayout
+					 android:orientation="horizontal"
+					 android:layout_width="match_parent"
+					 android:layout_height="wrap_content"
+					 android:layout_marginLeft="5dp"
+					 android:layout_marginRight="5dp"
+					 android:gravity="center"
+					 android:layout_marginTop="3dp"
+					 android:background="@color/colorAccent"
+					 android:baselineAligned="false">
+
+					 <LinearLayout
+						 android:orientation="vertical"
+						 android:layout_width="match_parent"
+						 android:layout_height="match_parent"
+						 android:layout_weight="2"
+						 android:gravity="center" >
+
+						 <TextView
+							 android:layout_width="match_parent"
+							 android:layout_height="wrap_content"
+							 android:textAppearance="?android:attr/textAppearanceLarge"
+							 android:text="ÍTEMS / PLAZO ENTREGA:"
+							 android:id="@+id/textView78"
+							 android:textColor="#ffffff"
+							 android:textSize="15sp"
+							 android:textStyle="bold"
+							 android:gravity="right"
+							 android:padding="5dp" />
+					 </LinearLayout>
+
+					 <LinearLayout
+						 android:orientation="vertical"
+						 android:layout_width="match_parent"
+						 android:layout_height="match_parent"
+						 android:layout_weight="1"
+						 android:baselineAligned="false"
+						 android:clickable="false"
+						 android:gravity="center"
+						 android:layout_marginRight="1dp"
+						 android:layout_marginTop="1dp"
+						 android:layout_marginBottom="1dp" >
+
+						 <LinearLayout
+							 android:orientation="vertical"
+							 android:layout_width="match_parent"
+							 android:layout_height="0dp"
+							 android:layout_weight="6"
+							 android:baselineAligned="false"
+							 android:clickable="false"
+							 android:gravity="center"
+							 android:background="#ffffff">
+
+							 <Button
+								 style="@style/ButtonStyle.RaisedFull"
+								 android:layout_width="match_parent"
+								 android:layout_height="wrap_content"
+								 android:id="@+id/btnItems2"
+								 android:textSize="14sp"
+
+								 android:text="SELECCIONE" />
+						 </LinearLayout>
+					 </LinearLayout>
+				 </LinearLayout>
+
+				 <LinearLayout
+					 android:orientation="horizontal"
+					 android:layout_width="match_parent"
+					 android:layout_height="wrap_content"
+					 android:layout_marginLeft="5dp"
+					 android:layout_marginRight="5dp"
+					 android:gravity="center"
+					 android:background="#000000"
+					 android:layout_marginTop="5dp" >
+
+					 <TextView
+						 android:layout_width="match_parent"
+						 android:layout_height="wrap_content"
+						 android:textAppearance="?android:attr/textAppearanceLarge"
+						 android:text="RESPONSABLE REGISTRO DE FICHA"
+						 android:id="@+id/textView83"
+						 android:gravity="center"
+						 android:textColor="#ffffff"
+						 android:textSize="20sp"
+						 android:textIsSelectable="false"
+						 android:textStyle="bold"
+						 android:padding="2dp" />
+				 </LinearLayout>
+
+
+				 <LinearLayout
+					 android:orientation="horizontal"
+					 android:layout_width="match_parent"
+					 android:layout_height="wrap_content" >
+
+					 <LinearLayout
+						 android:orientation="horizontal"
+						 android:layout_width="match_parent"
+						 android:layout_height="match_parent"
+						 android:baselineAligned="false">
+
+						 <LinearLayout
+							 android:orientation="horizontal"
+							 android:layout_width="match_parent"
+							 android:layout_height="wrap_content"
+							 android:layout_marginLeft="5dp"
+							 android:gravity="center"
+							 android:layout_marginTop="3dp"
+							 android:background="@color/colorAccent"
+							 android:layout_weight="1"
+							 android:paddingRight="1dp"
+							 android:baselineAligned="false">
+
+							 <LinearLayout
+								 android:orientation="vertical"
+								 android:layout_width="match_parent"
+								 android:layout_height="match_parent"
+								 android:layout_weight="1.6"
+								 android:gravity="center" >
+
+								 <TextView
+									 android:layout_width="match_parent"
+									 android:layout_height="wrap_content"
+									 android:textAppearance="?android:attr/textAppearanceLarge"
+									 android:text="DNI:"
+									 android:id="@+id/textView91"
+									 android:textColor="#ffffff"
+									 android:textSize="15sp"
+									 android:textStyle="bold"
+									 android:gravity="right"
+									 android:padding="5dp" />
+							 </LinearLayout>
+
+							 <LinearLayout
+								 android:orientation="vertical"
+								 android:layout_width="match_parent"
+								 android:layout_height="match_parent"
+								 android:layout_weight="1"
+								 android:baselineAligned="false"
+								 android:clickable="false"
+								 android:gravity="center"
+								 android:layout_marginTop="1dp"
+								 android:layout_marginBottom="1dp"
+								 android:background="#e3fcf5" >
+
+						<!--		 <EditText
+									 android:layout_width="match_parent"
+									 android:layout_height="wrap_content"
+									 android:inputType="number"
+									 android:digits="0123456789"
+									 android:maxLength="8"
+									 android:ems="10"
+									 android:id="@+id/txt_vDNISupervisor"
+									 android:layout_gravity="right"
+									 android:textSize="15dp"
+									 android:gravity="center"
+									 android:textColor="@color/colorAccent"
+									 android:textStyle="bold"
+									 android:hint="Ingrese DNI" />-->
+								 <AutoCompleteTextView
+									 android:layout_width="match_parent"
+									 android:layout_height="wrap_content"
+									 android:id="@+id/txt_vDNISupervisor"
+									 android:hint="Ingrese DNI"
+									 android:textSize="15sp"
+									 android:textColor="@android:color/black"
+									 android:maxLength="8"
+									 android:inputType="number"
+									 android:completionThreshold="3" />
+							 </LinearLayout>
+						 </LinearLayout>
+
+						 <LinearLayout
+							 android:orientation="vertical"
+							 android:layout_width="match_parent"
+							 android:layout_height="match_parent"
+							 android:layout_weight="6"
+							 android:baselineAligned="false"
+							 android:clickable="false"
+							 android:gravity="center"
+							 android:background="#ffffff"
+							 android:layout_marginTop="3dp"
+							 android:layout_marginRight="5dp" >
+
+							 <Button
+								 style="@style/ButtonStyle.RaisedFull"
+								 android:layout_width="wrap_content"
+								 android:layout_height="wrap_content"
+								 android:text="Buscar"
+								 android:id="@+id/btnBuscar"
+								 android:textSize="14sp"
+
+								 />
+
+						 </LinearLayout>
+					 </LinearLayout>
+				 </LinearLayout>
+
+				 <LinearLayout
+					 android:orientation="horizontal"
+					 android:layout_width="match_parent"
+					 android:layout_height="wrap_content"
+					 android:layout_marginLeft="5dp"
+					 android:layout_marginRight="5dp"
+					 android:gravity="center"
+					 android:layout_marginTop="3dp"
+					 android:background="@color/colorAccent"
+					 android:id="@+id/ll_apellidos"
+					 android:visibility="gone"
+					 android:baselineAligned="false">
+
+					 <LinearLayout
+						 android:orientation="vertical"
+						 android:layout_width="match_parent"
+						 android:layout_height="match_parent"
+						 android:layout_weight="2"
+						 android:gravity="center" >
+
+						 <TextView
+							 android:layout_width="match_parent"
+							 android:layout_height="wrap_content"
+							 android:textAppearance="?android:attr/textAppearanceLarge"
+							 android:text="APELLIDOS:"
+							 android:id="@+id/textView88"
+							 android:textColor="#ffffff"
+							 android:textSize="15sp"
+							 android:textStyle="bold"
+							 android:gravity="right"
+							 android:padding="5dp" />
+					 </LinearLayout>
+
+					 <LinearLayout
+						 android:orientation="vertical"
+						 android:layout_width="match_parent"
+						 android:layout_height="match_parent"
+						 android:layout_weight="1"
+						 android:baselineAligned="false"
+						 android:clickable="false"
+						 android:gravity="center"
+						 android:layout_marginRight="1dp"
+						 android:layout_marginTop="1dp"
+						 android:layout_marginBottom="1dp"
+						 android:background="#e3fcf5" >
+
+						 <EditText
+							 android:layout_width="match_parent"
+							 android:layout_height="wrap_content"
+							 android:inputType="textPersonName"
+							 android:text="txt_vApellidosSupervisor"
+							 android:ems="10"
+							 android:id="@+id/txt_vApellidosSupervisor"
+							 android:layout_gravity="right"
+							 android:textSize="15sp"
+							 android:gravity="center"
+							 android:textColor="@android:color/black"
+							 android:textStyle="bold"
+							 android:enabled="false" />
+					 </LinearLayout>
+				 </LinearLayout>
+
+				 <LinearLayout
+					 android:orientation="horizontal"
+					 android:layout_width="match_parent"
+					 android:layout_height="wrap_content"
+					 android:layout_marginLeft="5dp"
+					 android:layout_marginRight="5dp"
+					 android:gravity="center"
+					 android:layout_marginTop="3dp"
+					 android:background="@color/colorAccent"
+					 android:id="@+id/ll_nombres"
+					 android:baselineAligned="false">
+
+					 <LinearLayout
+						 android:orientation="vertical"
+						 android:layout_width="match_parent"
+						 android:layout_height="match_parent"
+						 android:layout_weight="2"
+						 android:gravity="center" >
+
+						 <TextView
+							 android:layout_width="match_parent"
+							 android:layout_height="wrap_content"
+							 android:textAppearance="?android:attr/textAppearanceLarge"
+							 android:text="NOMBRES:"
+							 android:id="@+id/textView89"
+							 android:textColor="#ffffff"
+							 android:textSize="15sp"
+							 android:textStyle="bold"
+							 android:gravity="right"
+							 android:padding="5dp" />
+					 </LinearLayout>
+
+					 <LinearLayout
+						 android:orientation="vertical"
+						 android:layout_width="match_parent"
+						 android:layout_height="match_parent"
+						 android:layout_weight="1"
+						 android:baselineAligned="false"
+						 android:clickable="false"
+						 android:gravity="center"
+						 android:layout_marginRight="1dp"
+						 android:layout_marginTop="1dp"
+						 android:layout_marginBottom="1dp"
+						 android:background="#e3fcf5" >
+
+						 <EditText
+							 android:layout_width="match_parent"
+							 android:layout_height="wrap_content"
+							 android:inputType="textPersonName"
+							 android:ems="10"
+							 android:id="@+id/txt_vNombresSupervisor"
+							 android:layout_gravity="right"
+							 android:textSize="15sp"
+							 android:gravity="center"
+							 android:textColor="@android:color/black"
+							 android:textStyle="bold"
+							 android:enabled="false" />
+					 </LinearLayout>
+				 </LinearLayout>
+
+
+				 <Button
+    	   			    	android:visibility="visible"
+						    android:id="@+id/buttonFicha"
+						    android:text="Ir a Ficha de Verificación de Rutas"
+					 		android:textSize="18sp"
+						    android:layout_marginTop="5dp"
+						    android:layout_marginBottom="5dp"
+						    android:layout_marginLeft="5dp"
+            				android:layout_marginRight="5dp"
+						    android:layout_width="fill_parent"
+						    android:layout_height="wrap_content"
+					 		style="@style/ButtonStyle.RaisedFull"
+						    android:shadowColor="#000000"
+						    android:shadowDx="-1"
+						    android:shadowDy="-1"
+						    android:shadowRadius="1"/>
+
+
+				 <LinearLayout
+					 android:orientation="vertical"
+					 android:layout_width="match_parent"
+					 android:layout_height="150dp">
+
+					 <LinearLayout
+						 android:layout_width="match_parent"
+						 android:layout_height="wrap_content"
+						 android:orientation="horizontal"
+						 android:baselineAligned="false">
+
+						 <LinearLayout
+							 android:layout_width="match_parent"
+							 android:layout_height="wrap_content"
+							 android:orientation="vertical"
+							 android:layout_weight="2"
+							 android:background="#ffffff">
+
+							 <TextView
+								 android:layout_width="match_parent"
+								 android:layout_height="wrap_content"
+								 android:text="ITEM"
+								 android:gravity="center"
+								 android:textColor="#ffffff"
+								 android:background="@color/colorAccent"
+								 android:textSize="15sp"
+								 android:textStyle="bold"
+								 android:textAppearance="?android:attr/textAppearanceLarge"
+								 android:layout_margin="1dp" />
+
+						 </LinearLayout>
+
+						 <LinearLayout
+							 android:layout_width="match_parent"
+							 android:layout_height="wrap_content"
+							 android:orientation="vertical"
+							 android:layout_weight="1"
+							 android:background="#ffffff"
+							 android:layout_marginRight="1dp"
+							 android:layout_marginLeft="1dp">
+
+							 <TextView
+								 android:layout_width="match_parent"
+								 android:layout_height="wrap_content"
+								 android:text="PLAZO DE ENTREGA"
+								 android:gravity="center"
+								 android:textColor="@android:color/white"
+								 android:background="@android:color/holo_red_dark"
+								 android:textSize="15sp"
+								 android:textStyle="bold"
+								 android:textAppearance="?android:attr/textAppearanceLarge"
+								 android:layout_margin="1dp" />
+
+						 </LinearLayout>
+
+						 <LinearLayout
+							 android:layout_width="match_parent"
+							 android:layout_height="wrap_content"
+							 android:orientation="vertical"
+							 android:layout_weight="2"
+							 android:background="#ffffff">
+
+							 <TextView
+								 android:layout_width="match_parent"
+								 android:layout_height="wrap_content"
+								 android:text="N° IES "
+								 android:gravity="center"
+								 android:textColor="#ffffff"
+								 android:background="@color/colorAccent"
+								 android:textSize="15sp"
+								 android:textStyle="bold"
+								 android:textAppearance="?android:attr/textAppearanceLarge"
+								 android:layout_margin="1dp" />
+
+						 </LinearLayout>
+
+						 <LinearLayout
+							 android:layout_width="match_parent"
+							 android:layout_height="match_parent"
+							 android:orientation="vertical"
+							 android:layout_weight="2"
+							 android:background="#ffffff">
+
+							 <TextView
+								 android:layout_width="match_parent"
+								 android:layout_height="match_parent"
+								 android:text="# ENTREGA"
+								 android:gravity="center"
+								 android:textColor="#ffffff"
+								 android:background="@color/colorAccent"
+								 android:textSize="13sp"
+								 android:textStyle="bold"
+								 android:textAppearance="?android:attr/textAppearanceLarge"
+								 android:layout_margin="1dp" />
+
+						 </LinearLayout>
+
+
+
+					 </LinearLayout>
+
+					 <ListView
+                         android:layout_width="match_parent"
+                         android:layout_height="match_parent"
+                         android:id="@+id/listaitems">
+
+                     </ListView>
+
+				 </LinearLayout>
+
+
+			 </LinearLayout>
+    	 		
+
+
+
+             
+               </ScrollView>
+    	   	
+    	   	
+    					
+
+<!-- </LinearLayout> -->
